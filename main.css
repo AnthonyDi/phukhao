@@ -1,0 +1,323 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f9f9f9;
+}
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. 
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}*/
+footer .container .text-muted {
+  margin: 20px 0;
+}
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+  /* padding-bottom: 40px;*/
+  color: #5a5a5a;
+  background: #ccc;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Declare heights because of positioning of img element */
+@media (min-width: 1200px) {
+  .carousel-inner > .item > img {
+    width: 100%;
+    max-height: 860px;
+    height: auto;
+  }
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 80px 0;
+  /* Space out the Bootstrap <hr> more */
+}
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+/* Fade transition for carousel items */
+.carousel .item {
+  left: 0 !important;
+  -webkit-transition: opacity .5s;
+  /*adjust timing here */
+  -moz-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+.carousel-control {
+  background-image: none !important;
+  /* remove background gradients on controls */
+}
+/* Fade controls with items */
+.next.left,
+.prev.right {
+  opacity: 1;
+  z-index: 1;
+}
+.active.left,
+.active.right {
+  opacity: 0;
+  z-index: 2;
+}
+/* removes the background gradient on hover */
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+a {
+  color: #111;
+}
+a:hover {
+  color: #424242;
+  text-decoration: none;
+}
+.centered {
+  text-align: center !important;
+}
+.jumbotron h1,
+.jumbotron p {
+  color: #fff;
+}
+.navbar-default {
+  background: none !important;
+  border: none;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-default .navbar-nav > li > a:hover {
+  color: #f1f1f1;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-default .navbar-nav > .active > a:hover {
+  background: none;
+  color: #fff;
+  font-weight: bold;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-default .navbar-nav > .open > a:hover {
+  background: none;
+  color: #fff;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
+.navbar-default .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover {
+  background: none;
+}
+.navbar-default .navbar-toggle {
+  border: none;
+  transition: all 300ms ease 0s;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background: #fff;
+  width: 31px;
+  height: 3px;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-default .navbar-toggle:hover {
+  background: none;
+}
+.dropdown-menu {
+  background: #fff;
+  border-radius: 1px;
+}
+.dropdown-menu > li > a {
+  color: #555;
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu .dropdown-menu > li > a:hover {
+  background: none;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu .dropdown-menu > .active > a:focus,
+.dropdown-menu .dropdown-menu > .active > a:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .dropdown-menu > li > a {
+    color: #fff!important;
+  }
+}
+.navbar-inverse {
+  background: none !important;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 10px;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #000;
+  text-transform: uppercase;
+}
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-inverse .navbar-nav > li > a:hover {
+  color: #777;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-inverse .navbar-nav > .active > a:hover {
+  background: none;
+  color: #777;
+  font-weight: bold;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-inverse .navbar-nav > .open > a:hover {
+  background: none;
+  color: #777;
+}
+/*
+.carousel {
+height: inherit;
+background:pink;
+
+}*/
+.carousel-indicators li {
+  background-color: #fff;
+  border: none;
+  width: 8px;
+  height: 8px;
+}
+.carousel-indicators .active {
+  background-color: #999;
+  border: none;
+  width: 8px;
+  height: 8px;
+}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next,
+.carousel-control .icon-prev {
+  font-size: 22px;
+  height: 22px;
+  width: 22px;
+}
+.blockquote-reverse,
+blockquote.pull-right {
+  border: none;
+}
+blockquote footer {
+  color: #ddd;
+  font-size: 16px;
+}
+.firstblockquote {
+  margin-top: 150px;
+}
+.location {
+  background: #202226;
+}
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  margin-top: 45px;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
