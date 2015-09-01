@@ -1,0 +1,188 @@
+a {
+        color: #111;
+}
+
+a:hover {
+    color: #424242;
+    text-decoration: none;
+}
+
+.centered {
+        text-align: center !important;
+}
+
+
+.navbar-default .navbar-brand {
+        color: #fff;
+}
+
+
+.jumbotron h1, .jumbotron p {
+        color: #fff;
+}
+
+
+.navbar-default {
+        background: none !important;
+        border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+        color: #fff;
+        text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+        color: #f1f1f1;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+        background: none;
+        color: #fff;
+        font-weight: bold;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+        background: none;
+        color: #fff;
+}
+
+
+.dropdown-menu {
+        background: #fff;
+        border-radius: 1px;
+}
+
+.dropdown-menu > li > a {
+        color: #555;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+                background: none;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+        background-color: #fff;
+        color: #000;
+        font-weight: bold;
+}
+
+
+/*keep for mobile view*/
+@media (max-width: 768px) {
+.dropdown-menu > li > a {
+        color: #fff!important;
+}
+}
+
+/*for carousel pages*/
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover {
+background:none;
+}
+
+/* inverse */
+
+.navbar-inverse {
+        background: none !important;
+border: none;        
+border-bottom: 1px solid #aaa;
+padding-bottom: 10px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+        color: #000;
+        text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+        color: #777;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+        background: none;
+        color: #777;
+        font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+        background: none;
+        color: #777;
+}
+
+.navbar-default .navbar-toggle {
+        border: none;
+
+transition: all 300ms ease 0s;
+}
+.navbar-default .navbar-toggle .icon-bar {
+        background: #fff;
+        width: 31px;
+        height: 3px;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background:none;
+}
+
+/*
+.carousel {
+height: inherit;
+background:pink;
+
+}*/
+
+
+.carousel-indicators li {
+        background-color: #fff;
+        border: none;
+        width: 8px;
+        height: 8px;
+}
+
+.carousel-indicators .active {
+        background-color: #999;
+        border: none;
+        width: 8px;
+        height: 8px;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    font-size: 22px;
+    height: 22px;
+    width: 22px;
+}
+
+.blockquote-reverse, blockquote.pull-right {
+        border: none;
+}
+
+blockquote footer {
+        color: #ddd;
+        font-size: 16px;     
+}
+
+.firstblockquote {
+        margin-top: 150px;
+}
+
+.location {
+        background: #202226;
+}
+
+    .google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+margin-top: 45px;
+    
+
+}
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+
