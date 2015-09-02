@@ -48,10 +48,8 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 	
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" media="all">
-        <link rel="stylesheet" href="sticky-footer.css" media="all">
-        <link href="carousel.css" rel="stylesheet" media="all">
-        <link href="style.css" rel="stylesheet" media="all">
-
+        
+        <link href="main.css" rel="stylesheet" media="all">
     </head>
     <body>
 

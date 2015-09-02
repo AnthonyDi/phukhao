@@ -21,78 +21,81 @@ a:hover {
   text-transform: uppercase;
 }
 .navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-default .navbar-nav > li > a:hover {
   color: #f1f1f1;
 }
 .navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
+.navbar-default .navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-default .navbar-nav > .active > a:hover {
   background: none;
   color: #fff;
   font-weight: bold;
 }
 .navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:focus,
-.navbar-default .navbar-nav > .open > a:hover {
+.navbar-default .navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-default .navbar-nav > .open > a:hover {
   background: none;
   color: #fff;
 }
-.dropdown-menu {
-  background: #fff;
-  border-radius: 1px;
-}
-.dropdown-menu > li > a {
-  color: #555;
-}
-.dropdown-menu > li > a:focus,
-.dropdown-menu .dropdown-menu > li > a:hover {
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
+.navbar-default .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover {
   background: none;
 }
-.dropdown-menu > .active > a,
-.dropdown-menu .dropdown-menu > .active > a:focus,
-.dropdown-menu .dropdown-menu > .active > a:hover {
-  background-color: #fff;
-  color: #000;
-  font-weight: bold;
+.navbar-default .navbar-toggle {
+  border: none;
+  transition: all 300ms ease 0s;
 }
+.navbar-default .navbar-toggle .icon-bar {
+  background: #fff;
+  width: 31px;
+  height: 3px;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-default .navbar-toggle:hover {
+  background: none;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.location .navbar-default .navbar-nav > li {
+  background: #202226;
+}
+/*keep for mobile view*/
 @media (max-width: 768px) {
   .dropdown-menu > li > a {
     color: #fff!important;
   }
 }
-/*for carousel pages*/
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
-.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover {
-  background: none;
-}
+/*
 .navbar-inverse {
-  background: none !important;
-  border: none;
-  border-bottom: 1px solid #aaa;
-  padding-bottom: 10px;
+        background: none !important;
+		border: none;        
+		border-bottom: 1px solid #aaa;
+		padding-bottom: 10px;
+
+	.navbar-nav > li > a {
+			color: gold;
+			text-transform: uppercase;
+	}
+
+	.navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+			color: #777;
+	}
+
+	.navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+			background: none;
+			color: #777;
+			font-weight: bold;
+	}
+
+	.navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+			background: none;
+			color: #777;
+	}
+
 }
-.navbar-inverse .navbar-nav > li > a {
-  color: #000;
-  text-transform: uppercase;
-}
-.navbar-inverse .navbar-nav > li > a:focus,
-.navbar-inverse .navbar-inverse .navbar-nav > li > a:hover {
-  color: #777;
-}
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-inverse .navbar-nav > .active > a:focus,
-.navbar-inverse .navbar-inverse .navbar-nav > .active > a:hover {
-  background: none;
-  color: #777;
-  font-weight: bold;
-}
-.navbar-inverse .navbar-nav > .open > a,
-.navbar-inverse .navbar-inverse .navbar-nav > .open > a:focus,
-.navbar-inverse .navbar-inverse .navbar-nav > .open > a:hover {
-  background: none;
-  color: #777;
-}
+*/
 /*
 .carousel {
 height: inherit;
@@ -146,4 +149,18 @@ blockquote footer {
   left: 0;
   width: 100% !important;
   height: 100% !important;
+}
+.navbar-inverse {
+  background: none;
+  border: none;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #111;
+  text-transform: uppercase;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-inverse .navbar-nav > .active > a:hover {
+  color: #111;
+  background: none;
 }
