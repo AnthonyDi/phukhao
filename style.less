@@ -47,6 +47,12 @@ a:hover {
 					color: #fff;
 			}
 
+.navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+	background: none !important;
+	color: #111 !important;
+}
+
+
 		// For carousel pages
 		.navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover {
 			background:none;
@@ -72,11 +78,17 @@ a:hover {
 
 }
 
-.location .navbar-default .navbar-nav > li{
-	background: #202226;
-}
 
+/*
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+	background: none;
+	color: #000;
+}*/
 
+/* this works but has lag
+.navbar-collapse.in {
+	background: green;
+}*/
 
 /*keep for mobile view*/
 @media (max-width: 768px) {
@@ -86,6 +98,28 @@ a:hover {
 }
 
 
+@media (max-width: 768px) {
+.navbar-default .navbar-nav > li > a {
+    color: #fff !important;
+    background: #555!important;
+}
+}
+
+@media (max-width: 768px) {
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	background: #555 !important;
+}
+}
+@media (max-width: 768px) {
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-default .navbar-nav > .open > a:hover {
+background: #555 !important;
+}
+}
+@media (max-width: 768px) {
+.navbar-nav > li > .dropdown-menu{
+	margin-top: -5px!important;
+}
+}
 
 // Inverse 
 /*
