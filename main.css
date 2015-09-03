@@ -1,5 +1,6 @@
 /* Sticky footer styles
 -------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Work+Sans);
 html {
   position: relative;
   min-height: 100%;
@@ -157,8 +158,12 @@ body {
 .carousel-control.left {
   background-image: none;
 }
+body {
+  font-family: 'Work Sans', sans-serif;
+}
 a {
   color: #111;
+  font-family: 'Work Sans', sans-serif;
 }
 a:hover {
   color: #424242;
@@ -225,12 +230,12 @@ a:hover {
 }
 /*
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
-	background: none;
-	color: #000;
+    background: none;
+    color: #000;
 }*/
 /* this works but has lag
 .navbar-collapse.in {
-	background: green;
+    background: green;
 }*/
 /*keep for mobile view*/
 @media (max-width: 768px) {
@@ -261,32 +266,38 @@ a:hover {
     margin-top: -5px !important;
   }
 }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background: none;
+  color: #fff;
+}
 /*
 .navbar-inverse {
         background: none !important;
-		border: none;        
-		border-bottom: 1px solid #aaa;
-		padding-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid #aaa;
+        padding-bottom: 10px;
 
-	.navbar-nav > li > a {
-			color: gold;
-			text-transform: uppercase;
-	}
+    .navbar-nav > li > a {
+            color: gold;
+            text-transform: uppercase;
+    }
 
-	.navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
-			color: #777;
-	}
+    .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+            color: #777;
+    }
 
-	.navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
-			background: none;
-			color: #777;
-			font-weight: bold;
-	}
+    .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+            background: none;
+            color: #777;
+            font-weight: bold;
+    }
 
-	.navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
-			background: none;
-			color: #777;
-	}
+    .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+            background: none;
+            color: #777;
+    }
 
 }
 */
@@ -357,4 +368,16 @@ blockquote footer {
 .navbar-inverse .navbar-inverse .navbar-nav > .active > a:hover {
   color: #111;
   background: none;
+}
+.btn {
+  background: #111;
+  float: right;
+  padding: 10px 50px;
+}
+.btn:hover {
+  background: #444;
+}
+.dropdown-menu {
+  background: green;
+  transition: all 0.2s ease-in-out 0s;
 }
