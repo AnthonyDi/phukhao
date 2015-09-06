@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-    color: @defaultLink * 5;
+    color: @defaultLink * 10;
     text-decoration: none;
 }
 
@@ -24,12 +24,12 @@ a:hover {
     color: #fff;
 }
 
-.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-	color: orange!important;
-}
+// This is for the logo  .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+//	color: orange!important;
+//}
             
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-	color: @defaultLink * 5;
+	color: @defaultLink * 10;
 }
 
 .navbar-default {
@@ -84,27 +84,40 @@ a:hover {
 
 // Keep for mobile view
 @media (max-width: 768px) {
+	.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-default .navbar-nav > .open > a:hover {
+		background: #fff !important;
+	}
+}
+
+@media (max-width: 768px) {
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		background: #fff !important;
+	}
+}
+
+
+@media (max-width: 768px) {
 	.dropdown-menu > li > a {
-        color: #fff!important;
+        color: @defaultLink !important;
 	}
 }
 
 @media (max-width: 768px) {
 	.navbar-default .navbar-nav > li > a {
-		color: #fff !important;
-		background: #555!important;
+		color: @defaultLink !important;
+		background: #fff!important;
 	}
 }
 
 @media (max-width: 768px) {
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
-		background: #555 !important;
+//		background: @defaultLink !important;
 	}
 }
 
 @media (max-width: 768px) {
 	.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-default .navbar-nav > .open > a:hover {
-		color: cyan !important;
+		//color: cyan !important;
 	}
 }
 
@@ -191,6 +204,7 @@ blockquote footer {
     background: @defaultLink;
     float: right;
     padding: 10px 50px;
+    background: green;
 }
 
 .btn:hover {
@@ -198,5 +212,8 @@ blockquote footer {
 }
 
 .dropdown-menu {
-	background: green;
+	background: #fff;
 }
+.dropdown-menu a {
+	color: orange;
+	}
