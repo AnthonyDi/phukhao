@@ -59,7 +59,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 
 
   <div class="navbar-wrapper">
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -103,10 +103,10 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
   </div><!-- navbar-wrapper -->
 
 
+    <div class="jumbotron location"></div>
 
 
-
-<div class="container" style="margin-top:100px;">
+<div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         

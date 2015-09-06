@@ -169,7 +169,7 @@ blockquote footer {
   background: #111111;
   float: right;
   padding: 10px 50px;
-  background: green;
+  font-weight: bold;
 }
 .btn:hover {
   background: #444;
