@@ -166,13 +166,10 @@ blockquote footer {
   background: none;
 }
 .btn {
-  background: #111111;
+  background: #fff;
   float: right;
   padding: 10px 50px;
   font-weight: bold;
-}
-.btn:hover {
-  background: #444;
 }
 .dropdown-menu {
   background: #fff;
