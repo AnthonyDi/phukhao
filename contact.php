@@ -42,7 +42,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>js</title>
+        <title>Phukhao Villa</title>
         
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	
@@ -206,7 +206,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 
       <footer class="footer">
 <div class="container">
-        <p class="text-muted">&copy; Villa Grier &nbsp; | &nbsp; <a href="#" title="Terms &038; Conditions">Terms &#038; Conditions</a></p>
+        <p class="text-muted">&copy; Phukhao Villa &nbsp; | &nbsp; <a href="#" title="Terms &038; Conditions">Terms &#038; Conditions</a></p>
 </div>
       </footer>
 
